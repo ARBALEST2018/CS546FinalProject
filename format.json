@@ -1,0 +1,3385 @@
+{
+  "artifactexistence.damagedestroy.n/a": {
+    "event_id": "evt001",
+    "roles": [
+      "damagerdestroyer",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 1,
+    "keywords": [
+      "vandalized",
+      "wreck",
+      "damaged",
+      "puncture",
+      "demolished",
+      "battered",
+      "demolish",
+      "torn",
+      "destroys",
+      "punctured",
+      "tear",
+      "damage",
+      "destroyed",
+      "eradicating",
+      "eradicate",
+      "demolishes",
+      "damaging",
+      "vandalizing",
+      "demolishing",
+      "wrecked",
+      "eradicated",
+      "ransacking",
+      "destroying",
+      "piercing",
+      "punctures",
+      "pierced",
+      "ransack",
+      "destroy",
+      "tore"
+    ]
+  },
+  "artifactexistence.damagedestroy.damage": {
+    "event_id": "evt002",
+    "roles": [
+      "damager",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 2,
+    "keywords": [
+      "battered",
+      "vandalized",
+      "torn",
+      "pierced",
+      "wreck",
+      "damage",
+      "damaging",
+      "vandalizing",
+      "tear",
+      "tore",
+      "puncture",
+      "wrecks",
+      "damaged",
+      "punctured",
+      "punctures",
+      "wrecked",
+      "piercing"
+    ]
+  },
+  "artifactexistence.damagedestroy.destroy": {
+    "event_id": "evt003",
+    "roles": [
+      "destroyer",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 3,
+    "keywords": [
+      "destroying",
+      "eradicate",
+      "destroyed",
+      "destroy",
+      "demolished",
+      "eradicated",
+      "demolish",
+      "ransacked",
+      "demolishes",
+      "eradicating",
+      "destroys",
+      "ransack",
+      "ransacking",
+      "demolishing"
+    ]
+  },
+  "conflict.attack.n/a": {
+    "event_id": "evt004",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 4,
+    "keywords": [
+      "attacks",
+      "robs",
+      "bombarded",
+      "strike",
+      "assault",
+      "coup",
+      "airstrike",
+      "hijacked",
+      "hijacking",
+      "stabbed",
+      "robbery",
+      "stabbings",
+      "massacre",
+      "firefight",
+      "Combat",
+      "detonating",
+      "conflict",
+      "bomb",
+      "blasts",
+      "stabbing",
+      "skirmish",
+      "hanged",
+      "combat",
+      "invaded",
+      "bombing",
+      "struck",
+      "invade",
+      "blast",
+      "slaughtered",
+      "blaze",
+      "invading",
+      "assail",
+      "Stabbing",
+      "clash",
+      "attacked",
+      "hanging",
+      "war",
+      "airstrikes",
+      "commandeered",
+      "hung",
+      "massacres",
+      "shot",
+      "gouge",
+      "BATTLE",
+      "detonated",
+      "encroached",
+      "attack",
+      "strikes",
+      "combating",
+      "clashed",
+      "encroach",
+      "blazed",
+      "clashes",
+      "annihilate",
+      "skirmishes",
+      "massacred",
+      "exploded",
+      "exploding",
+      "battle",
+      "Inferno",
+      "hijack",
+      "stab",
+      "blasted",
+      "poisoning",
+      "War",
+      "combatting",
+      "shooting",
+      "robbed",
+      "encroaching",
+      "strangled",
+      "annihilated",
+      "bombarding",
+      "arson",
+      "assailed",
+      "robbing",
+      "coups",
+      "strangle",
+      "explodes",
+      "slaughter",
+      "commandeering",
+      "explode",
+      "annihilating",
+      "battling",
+      "poison",
+      "skirmishing",
+      "aggress",
+      "gouged",
+      "detonate",
+      "strangling",
+      "striking",
+      "Slaughter",
+      "shoot",
+      "slaughters",
+      "encroaches"
+    ]
+  },
+  "conflict.attack.airstrikemissilestrike": {
+    "event_id": "evt005",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 5,
+    "keywords": [
+      "airstrike",
+      "airstrikes",
+      "bombard",
+      "bombarding",
+      "bombarded"
+    ]
+  },
+  "conflict.attack.biologicalchemicalpoisonattack": {
+    "event_id": "evt006",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 6,
+    "keywords": [
+      "poisoned",
+      "poisoning",
+      "poisons",
+      "poison"
+    ]
+  },
+  "conflict.attack.bombing": {
+    "event_id": "evt007",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 7,
+    "keywords": [
+      "bombing",
+      "strikes",
+      "exploded",
+      "struck",
+      "detonated",
+      "bomb",
+      "blasts",
+      "blast",
+      "detonating",
+      "explode",
+      "bombs",
+      "detonate",
+      "striking",
+      "exploding",
+      "bombed",
+      "explodes",
+      "strike",
+      "Bomb",
+      "detonates"
+    ]
+  },
+  "conflict.attack.firearmattack": {
+    "event_id": "evt008",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 8,
+    "keywords": [
+      "shoot",
+      "shooting",
+      "firefight",
+      "shot"
+    ]
+  },
+  "conflict.attack.hanging": {
+    "event_id": "evt009",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 9,
+    "keywords": [
+      "hanged",
+      "Hang",
+      "hung",
+      "hang"
+    ]
+  },
+  "conflict.attack.invade": {
+    "event_id": "evt010",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 10,
+    "keywords": [
+      "invaded",
+      "invade",
+      "encroached",
+      "encroaches",
+      "encroaching",
+      "encroach",
+      "invading"
+    ]
+  },
+  "conflict.attack.selfdirectedbattle": {
+    "event_id": "evt011",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 11,
+    "keywords": [
+      "battle",
+      "skirmishing",
+      "firefight",
+      "airstrike",
+      "combat",
+      "clashes",
+      "slaughter",
+      "attacks",
+      "slaughtered",
+      "airstrikes",
+      "assaults",
+      "annihilate",
+      "attack",
+      "skirmish",
+      "war",
+      "annihilating",
+      "assault",
+      "massacre",
+      "War",
+      "conflict",
+      "bombarded",
+      "coups",
+      "bombarding",
+      "conflicts",
+      "coup",
+      "skirmishes",
+      "wars",
+      "bombard",
+      "massacres",
+      "battles",
+      "attacking",
+      "assailed",
+      "CLASH",
+      "annihilated",
+      "aggress",
+      "clash",
+      "assailing",
+      "slaughtering",
+      "clashed",
+      "Massacre",
+      "massacred",
+      "attacked"
+    ]
+  },
+  "conflict.attack.setfire": {
+    "event_id": "evt012",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 12,
+    "keywords": [
+      "arson",
+      "blaze",
+      "inferno"
+    ]
+  },
+  "conflict.attack.stabbing": {
+    "event_id": "evt013",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 13,
+    "keywords": [
+      "stabbings",
+      "stabbed",
+      "gouged",
+      "stab",
+      "stabbing",
+      "Stab",
+      "stabs"
+    ]
+  },
+  "conflict.attack.stealrobhijack": {
+    "event_id": "evt014",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place",
+      "artifact"
+    ],
+    "i-label": 14,
+    "keywords": [
+      "robbery",
+      "hijacked",
+      "robbed",
+      "commandeered",
+      "commandeer",
+      "hijacking",
+      "robberies",
+      "hijack",
+      "Rob",
+      "rob"
+    ]
+  },
+  "conflict.attack.strangling": {
+    "event_id": "evt015",
+    "roles": [
+      "attacker",
+      "target",
+      "instrument",
+      "place"
+    ],
+    "i-label": 15,
+    "keywords": [
+      "strangling",
+      "strangle",
+      "strangled"
+    ]
+  },
+  "conflict.demonstrate.n/a": {
+    "event_id": "evt016",
+    "roles": [
+      "demonstrator",
+      "place"
+    ],
+    "i-label": 16,
+    "keywords": [
+      "protest",
+      "protests",
+      "protested",
+      "protesting"
+    ]
+  },
+  "conflict.demonstrate.marchprotestpoliticalgathering": {
+    "event_id": "evt017",
+    "roles": [
+      "demonstrator",
+      "place"
+    ],
+    "i-label": 17,
+    "keywords": [
+      "protests",
+      "protest",
+      "protesting",
+      "protested",
+      "Protest"
+    ]
+  },
+  "conflict.yield.n/a": {
+    "event_id": "evt018",
+    "roles": [
+      "yielder",
+      "recipient",
+      "place"
+    ],
+    "i-label": 18,
+    "keywords": [
+      "withdraw",
+      "capitulation",
+      "pullback",
+      "capitulate",
+      "retreating",
+      "surrender",
+      "withdrawn",
+      "retreat",
+      "surrendered",
+      "capitulated"
+    ]
+  },
+  "conflict.yield.retreat": {
+    "event_id": "evt019",
+    "roles": [
+      "retreater",
+      "origin",
+      "destination"
+    ],
+    "i-label": 19,
+    "keywords": [
+      "withdraw",
+      "withdrawing",
+      "retreats",
+      "retreat",
+      "withdrew",
+      "retreated",
+      "withdrawn"
+    ]
+  },
+  "conflict.yield.surrender": {
+    "event_id": "evt020",
+    "roles": [
+      "surrenderer",
+      "recipient",
+      "place"
+    ],
+    "i-label": 20,
+    "keywords": [
+      "capitulated",
+      "capitulate",
+      "surrender",
+      "surrendered",
+      "capitulation"
+    ]
+  },
+  "contact.collaborate.n/a": {
+    "event_id": "evt021",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 21,
+    "keywords": [
+      "fax",
+      "telephone",
+      "email",
+      "congregate",
+      "met",
+      "meeting",
+      "emailed",
+      "emails",
+      "congregated"
+    ]
+  },
+  "contact.collaborate.correspondence": {
+    "event_id": "evt022",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 22,
+    "keywords": [
+      "fax",
+      "emails",
+      "telephone",
+      "faxed",
+      "email",
+      "faxes"
+    ]
+  },
+  "contact.collaborate.meet": {
+    "event_id": "evt023",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 23,
+    "keywords": [
+      "meet",
+      "congregate",
+      "meeting",
+      "congregated",
+      "met",
+      "congregating"
+    ]
+  },
+  "contact.commandorder.n/a": {
+    "event_id": "evt024",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 24,
+    "keywords": [
+      "demands",
+      "urged",
+      "commands",
+      "demanded",
+      "urging",
+      "demand",
+      "urge",
+      "demanding",
+      "command"
+    ]
+  },
+  "contact.commandorder.broadcast": {
+    "event_id": "evt025",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 25,
+    "keywords": [
+      "urged",
+      "demands",
+      "urging",
+      "demanded",
+      "command",
+      "demanding",
+      "demand",
+      "urge"
+    ]
+  },
+  "contact.commandorder.correspondence": {
+    "event_id": "evt026",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 26,
+    "keywords": [
+      "urging",
+      "urge",
+      "demands",
+      "demanding",
+      "demanded",
+      "urged",
+      "demand",
+      "commanded"
+    ]
+  },
+  "contact.commandorder.meet": {
+    "event_id": "evt027",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 27,
+    "keywords": [
+      "demanded",
+      "urge",
+      "command",
+      "urged",
+      "demanding",
+      "urges",
+      "demand",
+      "demands"
+    ]
+  },
+  "contact.commitmentpromiseexpressintent.n/a": {
+    "event_id": "evt028",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 28,
+    "keywords": [
+      "pledges",
+      "pledged",
+      "oath",
+      "vowed",
+      "vowing",
+      "promised",
+      "promises",
+      "pledge",
+      "oaths",
+      "pledging",
+      "promise"
+    ]
+  },
+  "contact.commitmentpromiseexpressintent.broadcast": {
+    "event_id": "evt029",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 29,
+    "keywords": [
+      "oath",
+      "pledge",
+      "vows",
+      "pledged",
+      "promised",
+      "promising",
+      "vow",
+      "promise",
+      "pledging",
+      "vowed",
+      "pledges",
+      "Oath",
+      "promises",
+      "vowing",
+      "oaths"
+    ]
+  },
+  "contact.commitmentpromiseexpressintent.correspondence": {
+    "event_id": "evt030",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 30,
+    "keywords": [
+      "vowed",
+      "promises",
+      "vows",
+      "pledged",
+      "promised",
+      "promising",
+      "oath",
+      "promise",
+      "pledges",
+      "pledge",
+      "Oath",
+      "oaths",
+      "vow",
+      "vowing"
+    ]
+  },
+  "contact.commitmentpromiseexpressintent.meet": {
+    "event_id": "evt031",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 31,
+    "keywords": [
+      "promises",
+      "vow",
+      "vows",
+      "pledge",
+      "promised",
+      "oath",
+      "promise",
+      "vowing",
+      "vowed",
+      "pledging",
+      "pledged"
+    ]
+  },
+  "contact.discussion.n/a": {
+    "event_id": "evt032",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 32,
+    "keywords": [
+      "interview",
+      "dialogue",
+      "negotiate",
+      "meeting",
+      "convenes",
+      "debate",
+      "dialogues",
+      "met",
+      "discussing",
+      "discussed",
+      "discuss",
+      "convened",
+      "negotiated",
+      "meet",
+      "conferred",
+      "confer",
+      "negotiating",
+      "confers",
+      "debating",
+      "convene",
+      "conferring",
+      "convening",
+      "negotiates",
+      "Interview"
+    ]
+  },
+  "contact.discussion.correspondence": {
+    "event_id": "evt033",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 33,
+    "keywords": [
+      "convened",
+      "interview",
+      "discussed",
+      "conferred",
+      "discuss",
+      "meeting",
+      "debate",
+      "dialogue",
+      "negotiated",
+      "negotiating",
+      "confer",
+      "conferring",
+      "convene",
+      "confers",
+      "interviews",
+      "negotiate",
+      "interviewing",
+      "discusses"
+    ]
+  },
+  "contact.discussion.meet": {
+    "event_id": "evt034",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 34,
+    "keywords": [
+      "negotiate",
+      "confer",
+      "debate",
+      "discussing",
+      "dialogue",
+      "meeting",
+      "convened",
+      "debates",
+      "negotiated",
+      "interview",
+      "discussed",
+      "met",
+      "conferring",
+      "convene",
+      "debating",
+      "negotiating",
+      "Interview",
+      "meet",
+      "discuss",
+      "interviewed",
+      "confers",
+      "interviews",
+      "Debate",
+      "dialogues",
+      "convening"
+    ]
+  },
+  "contact.funeralvigil.n/a": {
+    "event_id": "evt035",
+    "roles": [
+      "participant",
+      "participant",
+      "deceased",
+      "place"
+    ],
+    "i-label": 35,
+    "keywords": [
+      "burial",
+      "funerals",
+      "funeral"
+    ]
+  },
+  "contact.funeralvigil.meet": {
+    "event_id": "evt036",
+    "roles": [
+      "participant",
+      "participant",
+      "deceased",
+      "place"
+    ],
+    "i-label": 36,
+    "keywords": [
+      "funerals",
+      "funeral",
+      "FUNERAL",
+      "burials",
+      "burial"
+    ]
+  },
+  "contact.mediastatement.n/a": {
+    "event_id": "evt037",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 37,
+    "keywords": [
+      "broadcast",
+      "broadcasts",
+      "address",
+      "preached",
+      "preaching",
+      "preach",
+      "preaches",
+      "addressed",
+      "addresses"
+    ]
+  },
+  "contact.mediastatement.broadcast": {
+    "event_id": "evt038",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 38,
+    "keywords": [
+      "address",
+      "broadcasting",
+      "broadcasts",
+      "addressed",
+      "broadcast",
+      "preached",
+      "preaching",
+      "preach",
+      "addresses",
+      "addressing"
+    ]
+  },
+  "contact.negotiate.n/a": {
+    "event_id": "evt039",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 39,
+    "keywords": [
+      "debate",
+      "negotiated",
+      "negotiate",
+      "negotiating"
+    ]
+  },
+  "contact.negotiate.correspondence": {
+    "event_id": "evt040",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 40,
+    "keywords": [
+      "negotiated",
+      "debates",
+      "negotiating",
+      "debate",
+      "negotiate"
+    ]
+  },
+  "contact.negotiate.meet": {
+    "event_id": "evt041",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 41,
+    "keywords": [
+      "debate",
+      "negotiating",
+      "negotiate",
+      "negotiated",
+      "debates"
+    ]
+  },
+  "contact.prevarication.n/a": {
+    "event_id": "evt042",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 42,
+    "keywords": [
+      "misleading",
+      "lied",
+      "lies",
+      "lying",
+      "deceiving",
+      "deceived",
+      "deceive",
+      "lie"
+    ]
+  },
+  "contact.prevarication.broadcast": {
+    "event_id": "evt043",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 43,
+    "keywords": [
+      "lying",
+      "mislead",
+      "deceives",
+      "deceiving",
+      "misleading",
+      "lied",
+      "deceive",
+      "lie",
+      "deceived",
+      "lies"
+    ]
+  },
+  "contact.prevarication.correspondence": {
+    "event_id": "evt044",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 44,
+    "keywords": [
+      "misleading",
+      "deceive",
+      "deceived",
+      "lying",
+      "lies",
+      "lie",
+      "lied",
+      "mislead",
+      "misled"
+    ]
+  },
+  "contact.prevarication.meet": {
+    "event_id": "evt045",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 45,
+    "keywords": [
+      "deceived",
+      "deceive",
+      "mislead",
+      "lie",
+      "misled",
+      "misleading",
+      "lied",
+      "deceiving",
+      "lies",
+      "lying"
+    ]
+  },
+  "contact.publicstatementinperson.n/a": {
+    "event_id": "evt046",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 46,
+    "keywords": [
+      "reiterated",
+      "proclaims",
+      "announced",
+      "proclaimed",
+      "announce",
+      "proposed",
+      "proposing",
+      "professes",
+      "professed",
+      "proposes",
+      "announcing",
+      "reiterating",
+      "reiterate",
+      "proclaim",
+      "profess"
+    ]
+  },
+  "contact.publicstatementinperson.broadcast": {
+    "event_id": "evt047",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 47,
+    "keywords": [
+      "reiterates",
+      "reiterated",
+      "proclaimed",
+      "reiterating",
+      "announced",
+      "proposing",
+      "propose",
+      "proposes",
+      "proposed",
+      "announces",
+      "professed",
+      "professes",
+      "profess",
+      "reiterate",
+      "proclaim",
+      "announcing",
+      "proclaiming"
+    ]
+  },
+  "contact.requestadvise.n/a": {
+    "event_id": "evt048",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 48,
+    "keywords": [
+      "advises",
+      "advocated",
+      "recommend",
+      "urged",
+      "suggested",
+      "suggest",
+      "advised",
+      "advocates",
+      "recommended",
+      "advising",
+      "advocate",
+      "suggesting",
+      "suggests",
+      "urge",
+      "recommends",
+      "urges"
+    ]
+  },
+  "contact.requestadvise.broadcast": {
+    "event_id": "evt049",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 49,
+    "keywords": [
+      "advocating",
+      "recommend",
+      "advised",
+      "urged",
+      "advocates",
+      "advocate",
+      "recommended",
+      "urging",
+      "advise",
+      "advocated",
+      "urge",
+      "suggest",
+      "suggested",
+      "suggesting",
+      "advises",
+      "suggests",
+      "recommends",
+      "advising"
+    ]
+  },
+  "contact.requestadvise.correspondence": {
+    "event_id": "evt050",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 50,
+    "keywords": [
+      "advocated",
+      "advise",
+      "advocating",
+      "urging",
+      "urges",
+      "recommend",
+      "urged",
+      "advised",
+      "urge",
+      "advising",
+      "suggests",
+      "advocates",
+      "advocate",
+      "recommended",
+      "suggested",
+      "suggest",
+      "suggesting",
+      "advises",
+      "recommends"
+    ]
+  },
+  "contact.requestadvise.meet": {
+    "event_id": "evt051",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 51,
+    "keywords": [
+      "urged",
+      "advises",
+      "advise",
+      "urging",
+      "recommend",
+      "advised",
+      "advocate",
+      "recommended",
+      "suggested",
+      "urges",
+      "advising",
+      "suggest",
+      "recommends",
+      "advocating",
+      "advocated",
+      "suggests",
+      "suggesting"
+    ]
+  },
+  "contact.threatencoerce.n/a": {
+    "event_id": "evt052",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 52,
+    "keywords": [
+      "threaten",
+      "threatening",
+      "blackmail",
+      "intimidate",
+      "blackmailing",
+      "intimidating",
+      "threatens",
+      "threatened",
+      "intimidated",
+      "blackmailed"
+    ]
+  },
+  "contact.threatencoerce.broadcast": {
+    "event_id": "evt053",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 53,
+    "keywords": [
+      "intimidate",
+      "blackmail",
+      "blackmails",
+      "threatening",
+      "threatened",
+      "intimidating",
+      "Blackmail",
+      "intimidated",
+      "threatens"
+    ]
+  },
+  "contact.threatencoerce.correspondence": {
+    "event_id": "evt054",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 54,
+    "keywords": [
+      "intimidating",
+      "blackmails",
+      "threaten",
+      "threatened",
+      "threatening",
+      "intimidate",
+      "blackmailed",
+      "blackmail",
+      "threatens",
+      "intimidated"
+    ]
+  },
+  "contact.threatencoerce.meet": {
+    "event_id": "evt055",
+    "roles": [
+      "communicator",
+      "recipient",
+      "place"
+    ],
+    "i-label": 55,
+    "keywords": [
+      "intimidated",
+      "blackmail",
+      "intimidate",
+      "threaten",
+      "threatening",
+      "blackmailed",
+      "blackmailing",
+      "threatened",
+      "intimidating"
+    ]
+  },
+  "disaster.accidentcrash.accidentcrash": {
+    "event_id": "evt057",
+    "roles": [
+      "driverpassenger",
+      "vehicle",
+      "crashobject",
+      "place"
+    ],
+    "i-label": 57,
+    "keywords": [
+      "collision",
+      "crashed",
+      "colliding",
+      "collisions",
+      "crash",
+      "collided",
+      "accidents",
+      "accident",
+      "crashes"
+    ]
+  },
+  "disaster.fireexplosion.fireexplosion": {
+    "event_id": "evt059",
+    "roles": [
+      "fireexplosionobject",
+      "instrument",
+      "place"
+    ],
+    "i-label": 59,
+    "keywords": [
+      "fire",
+      "explosions",
+      "blaze",
+      "exploded",
+      "blazing",
+      "explosion",
+      "explodes",
+      "exploding",
+      "inferno"
+    ]
+  },
+  "government.agreements.n/a": {
+    "event_id": "evt060",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 60,
+    "keywords": [
+      "agreement",
+      "treaty",
+      "Treaty",
+      "ceasefire",
+      "agreements",
+      "Agreement"
+    ]
+  },
+  "government.agreements.acceptagreementcontractceasefire": {
+    "event_id": "evt061",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 61,
+    "keywords": [
+      "agreement",
+      "ceasefire",
+      "Treaty",
+      "treaty",
+      "agreements",
+      "treaties",
+      "ceasefires"
+    ]
+  },
+  "government.agreements.rejectnullifyagreementcontractceasefire": {
+    "event_id": "evt062",
+    "roles": [
+      "rejecternullifier",
+      "otherparticipant",
+      "place"
+    ],
+    "i-label": 62,
+    "keywords": [
+      "agreement",
+      "treaty",
+      "Treaty",
+      "ceasefire",
+      "treaties",
+      "Agreement",
+      "agreements"
+    ]
+  },
+  "government.agreements.violateagreement": {
+    "event_id": "evt063",
+    "roles": [
+      "violator",
+      "otherparticipant",
+      "place"
+    ],
+    "i-label": 63,
+    "keywords": [
+      "ceasefire",
+      "agreements",
+      "violated",
+      "Treaty",
+      "Agreement",
+      "treaty",
+      "violating",
+      "violate",
+      "agreement",
+      "violates"
+    ]
+  },
+  "government.formation.n/a": {
+    "event_id": "evt064",
+    "roles": [
+      "gpe",
+      "founder",
+      "place"
+    ],
+    "i-label": 64,
+    "keywords": [
+      "annex",
+      "established",
+      "take",
+      "took",
+      "establish"
+    ]
+  },
+  "government.formation.mergegpe": {
+    "event_id": "evt065",
+    "roles": [
+      "participant",
+      "participant",
+      "place"
+    ],
+    "i-label": 65,
+    "keywords": [
+      "annex",
+      "took",
+      "take",
+      "taken",
+      "taking"
+    ]
+  },
+  "government.formation.startgpe": {
+    "event_id": "evt066",
+    "roles": [
+      "gpe",
+      "founder",
+      "place"
+    ],
+    "i-label": 66,
+    "keywords": [
+      "inaugurating",
+      "establish",
+      "established",
+      "inaugurated",
+      "inaugurate",
+      "establishing"
+    ]
+  },
+  "government.legislate.legislate": {
+    "event_id": "evt068",
+    "roles": [
+      "governmentbody",
+      "law",
+      "place"
+    ],
+    "i-label": 68,
+    "keywords": [
+      "abolish",
+      "abolished",
+      "signed",
+      "enacted",
+      "enacting",
+      "enact",
+      "abolishing",
+      "signing",
+      "votes",
+      "legislated",
+      "signs",
+      "legislating",
+      "voted",
+      "legislate",
+      "Enact"
+    ]
+  },
+  "government.spy.spy": {
+    "event_id": "evt070",
+    "roles": [
+      "spy",
+      "observedentity",
+      "beneficiary",
+      "place"
+    ],
+    "i-label": 70,
+    "keywords": [
+      "spy",
+      "spies",
+      "surveillance"
+    ]
+  },
+  "government.vote.n/a": {
+    "event_id": "evt071",
+    "roles": [
+      "voter",
+      "candidate",
+      "ballot",
+      "result",
+      "place"
+    ],
+    "i-label": 71,
+    "keywords": [
+      "voter",
+      "votes",
+      "vote",
+      "voting"
+    ]
+  },
+  "government.vote.castvote": {
+    "event_id": "evt072",
+    "roles": [
+      "voter",
+      "candidate",
+      "ballot",
+      "result",
+      "place"
+    ],
+    "i-label": 72,
+    "keywords": [
+      "vote",
+      "Voting",
+      "voting",
+      "voted",
+      "votes"
+    ]
+  },
+  "government.vote.violationspreventvote": {
+    "event_id": "evt073",
+    "roles": [
+      "preventer",
+      "voter",
+      "candidate",
+      "ballot",
+      "place"
+    ],
+    "i-label": 73,
+    "keywords": [
+      "voter",
+      "Voting",
+      "Voter",
+      "voting"
+    ]
+  },
+  "inspection.sensoryobserve.n/a": {
+    "event_id": "evt074",
+    "roles": [
+      "observer",
+      "observedentity",
+      "place"
+    ],
+    "i-label": 74,
+    "keywords": [
+      "inspect",
+      "inspected",
+      "immigration",
+      "inspecting",
+      "inspection",
+      "inspections",
+      "Immigration",
+      "immigrating",
+      "immigrated",
+      "election",
+      "voting",
+      "inspects"
+    ]
+  },
+  "inspection.sensoryobserve.inspectpeopleorganization": {
+    "event_id": "evt075",
+    "roles": [
+      "inspector",
+      "inspectedentity",
+      "place"
+    ],
+    "i-label": 75,
+    "keywords": [
+      "immigrate",
+      "inspection",
+      "immigrated",
+      "inspect",
+      "inspections",
+      "immigrating",
+      "immigration",
+      "inspects"
+    ]
+  },
+  "inspection.sensoryobserve.monitorelection": {
+    "event_id": "evt076",
+    "roles": [
+      "monitor",
+      "monitoredentity",
+      "place"
+    ],
+    "i-label": 76,
+    "keywords": [
+      "voting",
+      "election",
+      "elections"
+    ]
+  },
+  "inspection.sensoryobserve.physicalinvestigateinspect": {
+    "event_id": "evt077",
+    "roles": [
+      "inspector",
+      "inspectedentity",
+      "place"
+    ],
+    "i-label": 77,
+    "keywords": [
+      "inspections",
+      "inspection",
+      "inspect",
+      "inspects",
+      "immigrated",
+      "immigration",
+      "immigrating",
+      "immigrate",
+      "inspected"
+    ]
+  },
+  "justice.arrestjaildetain.arrestjaildetain": {
+    "event_id": "evt079",
+    "roles": [
+      "jailer",
+      "detainee",
+      "crime",
+      "place"
+    ],
+    "i-label": 79,
+    "keywords": [
+      "imprisoned",
+      "incarcerate",
+      "detained",
+      "jail",
+      "arrest",
+      "incarcerated",
+      "detain",
+      "capture",
+      "captured",
+      "arrested",
+      "jailed",
+      "arrests",
+      "jails",
+      "imprison",
+      "detaining",
+      "arresting",
+      "imprisoning",
+      "incarcerating"
+    ]
+  },
+  "justice.initiatejudicialprocess.n/a": {
+    "event_id": "evt080",
+    "roles": [
+      "prosecutor",
+      "defendant",
+      "judgecourt",
+      "crime",
+      "place"
+    ],
+    "i-label": 80,
+    "keywords": [
+      "testifying",
+      "indicted",
+      "testify",
+      "trial",
+      "charges",
+      "accused",
+      "trials",
+      "proceeding",
+      "proceedings",
+      "indict",
+      "charge",
+      "indicting",
+      "charged",
+      "Charge",
+      "testified",
+      "charging"
+    ]
+  },
+  "justice.initiatejudicialprocess.chargeindict": {
+    "event_id": "evt081",
+    "roles": [
+      "prosecutor",
+      "defendant",
+      "judgecourt",
+      "crime",
+      "place"
+    ],
+    "i-label": 81,
+    "keywords": [
+      "indicted",
+      "accused",
+      "charges",
+      "accusing",
+      "indicting",
+      "indict",
+      "charged"
+    ]
+  },
+  "justice.initiatejudicialprocess.trialhearing": {
+    "event_id": "evt082",
+    "roles": [
+      "prosecutor",
+      "defendant",
+      "judgecourt",
+      "crime",
+      "place"
+    ],
+    "i-label": 82,
+    "keywords": [
+      "proceedings",
+      "testify",
+      "trial",
+      "testifies",
+      "testified",
+      "testifying"
+    ]
+  },
+  "justice.investigate.n/a": {
+    "event_id": "evt083",
+    "roles": [
+      "investigator",
+      "defendant",
+      "place"
+    ],
+    "i-label": 83,
+    "keywords": [
+      "investigation",
+      "investigations",
+      "investigating",
+      "investigates",
+      "investigate",
+      "investigated"
+    ]
+  },
+  "justice.investigate.investigatecrime": {
+    "event_id": "evt084",
+    "roles": [
+      "investigator",
+      "defendant",
+      "crime",
+      "place"
+    ],
+    "i-label": 84,
+    "keywords": [
+      "investigation",
+      "investigations",
+      "investigate",
+      "investigating",
+      "investigated"
+    ]
+  },
+  "justice.judicialconsequences.n/a": {
+    "event_id": "evt085",
+    "roles": [
+      "judgecourt",
+      "defendant",
+      "crime",
+      "place"
+    ],
+    "i-label": 85,
+    "keywords": [
+      "extradite",
+      "convicted",
+      "executions",
+      "death",
+      "extradition",
+      "executes",
+      "extradited",
+      "guilty",
+      "convicts",
+      "execution",
+      "executed",
+      "Extradition",
+      "Guilty",
+      "Death"
+    ]
+  },
+  "justice.judicialconsequences.convict": {
+    "event_id": "evt086",
+    "roles": [
+      "judgecourt",
+      "defendant",
+      "crime",
+      "place"
+    ],
+    "i-label": 86,
+    "keywords": [
+      "convicts",
+      "guilty",
+      "convicted",
+      "convict",
+      "convicting"
+    ]
+  },
+  "justice.judicialconsequences.execute": {
+    "event_id": "evt087",
+    "roles": [
+      "executioner",
+      "defendant",
+      "crime",
+      "place"
+    ],
+    "i-label": 87,
+    "keywords": [
+      "death",
+      "executions",
+      "execution",
+      "executed",
+      "executing",
+      "execute"
+    ]
+  },
+  "justice.judicialconsequences.extradite": {
+    "event_id": "evt088",
+    "roles": [
+      "extraditer",
+      "defendant",
+      "crime",
+      "origin",
+      "destination"
+    ],
+    "i-label": 88,
+    "keywords": [
+      "extradition",
+      "extradited",
+      "extradite"
+    ]
+  },
+  "life.die.n/a": {
+    "event_id": "evt089",
+    "roles": [
+      "victim",
+      "place"
+    ],
+    "i-label": 89,
+    "keywords": [
+      "shot",
+      "deceased",
+      "slain",
+      "perished",
+      "killing",
+      "GENOCIDE",
+      "genocide",
+      "assassinate",
+      "murder",
+      "killed",
+      "executed",
+      "shooting",
+      "Holocaust",
+      "assassinating",
+      "decapitated",
+      "homicide",
+      "fatal",
+      "passed",
+      "murdered",
+      "massacres",
+      "died",
+      "massacre",
+      "assassinated",
+      "fatalities",
+      "die",
+      "fatality",
+      "drowned",
+      "slew",
+      "decapitate",
+      "decapitating",
+      "executing",
+      "homicides",
+      "slaughter",
+      "exterminate",
+      "drowning",
+      "execute",
+      "shoot",
+      "drown",
+      "exterminated",
+      "dies",
+      "assassinates",
+      "murdering"
+    ]
+  },
+  "life.die.deathcausedbyviolentevents": {
+    "event_id": "evt090",
+    "roles": [
+      "killer",
+      "victim",
+      "instrument",
+      "place"
+    ],
+    "i-label": 90,
+    "keywords": [
+      "homicide",
+      "genocide",
+      "Holocaust",
+      "massacre",
+      "decapitate",
+      "killed",
+      "killing",
+      "fatal",
+      "homicides",
+      "murder",
+      "assassinated",
+      "executed",
+      "exterminated",
+      "assassinate",
+      "Genocide",
+      "slaughtered",
+      "decapitated",
+      "murdered",
+      "slaughtering",
+      "assassinating",
+      "genocides",
+      "fatality",
+      "slaying",
+      "die",
+      "slain",
+      "murders",
+      "fatalities",
+      "slaughter",
+      "drowning",
+      "murdering",
+      "drowned",
+      "exterminate",
+      "slew",
+      "executing",
+      "died",
+      "shooting",
+      "kill",
+      "Fatal",
+      "exterminating",
+      "shoot",
+      "holocaust",
+      "dies",
+      "decapitating",
+      "massacres",
+      "drown",
+      "shot",
+      "Die",
+      "execute",
+      "kills"
+    ]
+  },
+  "life.die.nonviolentdeath": {
+    "event_id": "evt091",
+    "roles": [
+      "victim",
+      "place"
+    ],
+    "i-label": 91,
+    "keywords": [
+      "passed",
+      "die",
+      "drowning",
+      "deceased",
+      "dies",
+      "pass",
+      "died",
+      "perished",
+      "perishing",
+      "drown",
+      "drowned"
+    ]
+  },
+  "life.injure.n/a": {
+    "event_id": "evt092",
+    "roles": [
+      "victim",
+      "injurer",
+      "place"
+    ],
+    "i-label": 92,
+    "keywords": [
+      "dehydrated",
+      "punching",
+      "violent",
+      "starvation",
+      "assault",
+      "shot",
+      "kicked",
+      "harm",
+      "shooting",
+      "kick",
+      "raped",
+      "bruised",
+      "attack",
+      "torture",
+      "wounded",
+      "injured",
+      "starved",
+      "fever",
+      "attacks",
+      "strike",
+      "injuring",
+      "rape",
+      "brutalizing",
+      "strikes",
+      "bruises",
+      "hurting",
+      "starve",
+      "assaulted",
+      "tortured",
+      "sickness",
+      "illness",
+      "brutalized",
+      "illnesses",
+      "sick",
+      "dehydration",
+      "hurt",
+      "wound",
+      "kicking",
+      "torturing",
+      "attacked",
+      "wounds",
+      "whipping",
+      "punched",
+      "Starvation",
+      "assaults",
+      "mutilated",
+      "starving",
+      "surgery",
+      "punch"
+    ]
+  },
+  "life.injure.illnessdegradationhungerthirst": {
+    "event_id": "evt093",
+    "roles": [
+      "victim",
+      "place"
+    ],
+    "i-label": 93,
+    "keywords": [
+      "dehydrated",
+      "dehydration",
+      "starvation",
+      "starve",
+      "starving",
+      "Starvation",
+      "starved"
+    ]
+  },
+  "life.injure.illnessdegradationphysical": {
+    "event_id": "evt094",
+    "roles": [
+      "victim"
+    ],
+    "i-label": 94,
+    "keywords": [
+      "sickness",
+      "illness",
+      "fever",
+      "sick",
+      "surgery",
+      "illnesses",
+      "surgeries",
+      "Fever"
+    ]
+  },
+  "life.injure.injurycausedbyviolentevents": {
+    "event_id": "evt095",
+    "roles": [
+      "injurer",
+      "victim",
+      "instrument",
+      "place"
+    ],
+    "i-label": 95,
+    "keywords": [
+      "assault",
+      "strikes",
+      "TORTURE",
+      "mutilated",
+      "punched",
+      "wounded",
+      "shot",
+      "torture",
+      "injured",
+      "tortured",
+      "hurt",
+      "bruises",
+      "wounding",
+      "harm",
+      "wounds",
+      "rape",
+      "punch",
+      "punches",
+      "bruised",
+      "harms",
+      "attacks",
+      "violent",
+      "kicking",
+      "raped",
+      "strike",
+      "injuring",
+      "kick",
+      "brutalizing",
+      "assaulted",
+      "shooting",
+      "raping",
+      "shed",
+      "attack",
+      "Rape",
+      "shoot",
+      "struck",
+      "assaulting",
+      "attacked",
+      "torturing",
+      "punching",
+      "Torture",
+      "wound",
+      "assaults"
+    ]
+  },
+  "manufacture.artifact.n/a": {
+    "event_id": "evt096",
+    "roles": [
+      "manufacturer",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 96,
+    "keywords": [
+      "produced",
+      "composing",
+      "constructed",
+      "manufacturing",
+      "produce",
+      "construct",
+      "built",
+      "composed",
+      "build",
+      "created",
+      "create",
+      "make",
+      "constructing",
+      "made",
+      "constructs",
+      "assembled"
+    ]
+  },
+  "manufacture.artifact.build": {
+    "event_id": "evt097",
+    "roles": [
+      "manufacturer",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 97,
+    "keywords": [
+      "construct",
+      "built",
+      "constructed",
+      "constructing",
+      "building",
+      "build",
+      "assembling",
+      "builds"
+    ]
+  },
+  "manufacture.artifact.createintellectualproperty": {
+    "event_id": "evt098",
+    "roles": [
+      "manufacturer",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 98,
+    "keywords": [
+      "produced",
+      "producing",
+      "composed",
+      "composing",
+      "produce"
+    ]
+  },
+  "manufacture.artifact.createmanufacture": {
+    "event_id": "evt099",
+    "roles": [
+      "manufacturer",
+      "artifact",
+      "instrument",
+      "place"
+    ],
+    "i-label": 99,
+    "keywords": [
+      "producing",
+      "produce",
+      "produced",
+      "manufactured",
+      "assembling",
+      "assemble",
+      "manufacturing",
+      "created",
+      "assembled",
+      "made"
+    ]
+  },
+  "movement.transportartifact.n/a": {
+    "event_id": "evt100",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 100,
+    "keywords": [
+      "supplied",
+      "flung",
+      "smuggled",
+      "trafficking",
+      "imports",
+      "incarcerate",
+      "plunged",
+      "shipments",
+      "importing",
+      "hurling",
+      "supply",
+      "imported",
+      "arrests",
+      "hurled",
+      "smuggling",
+      "flinging",
+      "shipment",
+      "denied",
+      "thrown",
+      "exporting",
+      "plummeted",
+      "freight",
+      "obstructing",
+      "plunge",
+      "detained",
+      "supplies",
+      "exports",
+      "roadblocks",
+      "hurls",
+      "import",
+      "throw",
+      "plunging",
+      "hurl",
+      "brings",
+      "throwing",
+      "transport",
+      "brought",
+      "exported",
+      "plunges",
+      "threw",
+      "heaves",
+      "bring",
+      "obstruction",
+      "smuggle",
+      "Trafficking",
+      "transported"
+    ]
+  },
+  "movement.transportartifact.bringcarryunload": {
+    "event_id": "evt101",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 101,
+    "keywords": [
+      "shipments",
+      "transport",
+      "shipment",
+      "freight",
+      "transporting",
+      "transported"
+    ]
+  },
+  "movement.transportartifact.disperseseparate": {
+    "event_id": "evt102",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 102,
+    "keywords": [
+      "shipment",
+      "transporting",
+      "shipments",
+      "transported",
+      "transport",
+      "freight"
+    ]
+  },
+  "movement.transportartifact.fall": {
+    "event_id": "evt103",
+    "roles": [
+      "artifact",
+      "origin",
+      "destination"
+    ],
+    "i-label": 103,
+    "keywords": [
+      "transporting",
+      "shipment",
+      "shipments",
+      "plunged",
+      "transport",
+      "freight",
+      "plunging",
+      "plummets"
+    ]
+  },
+  "movement.transportartifact.grantentry": {
+    "event_id": "evt104",
+    "roles": [
+      "transporter",
+      "artifact",
+      "origin",
+      "destination"
+    ],
+    "i-label": 104,
+    "keywords": [
+      "imported",
+      "import",
+      "imports",
+      "bring",
+      "bringing",
+      "brought",
+      "importing"
+    ]
+  },
+  "movement.transportartifact.hide": {
+    "event_id": "evt105",
+    "roles": [
+      "transporter",
+      "artifact",
+      "hidingplace",
+      "vehicle",
+      "origin"
+    ],
+    "i-label": 105,
+    "keywords": [
+      "smuggled",
+      "smuggling",
+      "smuggle",
+      "concealed",
+      "concealing",
+      "conceal"
+    ]
+  },
+  "movement.transportartifact.nonviolentthrowlaunch": {
+    "event_id": "evt106",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 106,
+    "keywords": [
+      "throwing",
+      "thrown",
+      "hurl",
+      "heaves",
+      "flung",
+      "threw",
+      "fling",
+      "hurls",
+      "throws",
+      "hurled"
+    ]
+  },
+  "movement.transportartifact.prevententry": {
+    "event_id": "evt107",
+    "roles": [
+      "preventer",
+      "transporter",
+      "artifact",
+      "origin",
+      "destination"
+    ],
+    "i-label": 107,
+    "keywords": [
+      "obstruction",
+      "denied",
+      "roadblock",
+      "obstruct",
+      "roadblocks",
+      "obstructing",
+      "obstructed"
+    ]
+  },
+  "movement.transportartifact.preventexit": {
+    "event_id": "evt108",
+    "roles": [
+      "preventer",
+      "transporter",
+      "artifact",
+      "origin",
+      "destination"
+    ],
+    "i-label": 108,
+    "keywords": [
+      "incarcerated",
+      "arrests",
+      "detain",
+      "detained",
+      "captured",
+      "arrested",
+      "imprison",
+      "arrest",
+      "jailing",
+      "capture",
+      "incarcerate",
+      "detaining",
+      "imprisoned",
+      "jail",
+      "capturing",
+      "jailed"
+    ]
+  },
+  "movement.transportartifact.receiveimport": {
+    "event_id": "evt109",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 109,
+    "keywords": [
+      "imports",
+      "imported",
+      "Import",
+      "importing",
+      "import"
+    ]
+  },
+  "movement.transportartifact.sendsupplyexport": {
+    "event_id": "evt110",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 110,
+    "keywords": [
+      "supply",
+      "exporting",
+      "exported",
+      "supplies",
+      "exports",
+      "supplying",
+      "Export",
+      "export",
+      "supplied"
+    ]
+  },
+  "movement.transportartifact.smuggleextract": {
+    "event_id": "evt111",
+    "roles": [
+      "transporter",
+      "artifact",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 111,
+    "keywords": [
+      "smuggling",
+      "smuggled",
+      "trafficking",
+      "smuggle"
+    ]
+  },
+  "movement.transportperson.n/a": {
+    "event_id": "evt112",
+    "roles": [
+      "transporter",
+      "passenger",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 112,
+    "keywords": [
+      "fled",
+      "escape",
+      "flee",
+      "asylum",
+      "incarcerated",
+      "trafficking",
+      "unloaded",
+      "immigrated",
+      "plummeted",
+      "transport",
+      "roam",
+      "transporting",
+      "jailed",
+      "roamed",
+      "evacuate",
+      "immigrate",
+      "transported",
+      "roaming",
+      "denied",
+      "walked",
+      "concealed",
+      "detained",
+      "smuggling",
+      "smuggled",
+      "migrate",
+      "marched",
+      "evacuated",
+      "walking",
+      "unloading",
+      "imprisoned",
+      "fleeing",
+      "plummet",
+      "immigrating",
+      "jail",
+      "escaped",
+      "walk",
+      "stumbled",
+      "evacuating",
+      "captured",
+      "arrested",
+      "roadblocks",
+      "march",
+      "imprison",
+      "walks",
+      "incarcerate",
+      "migrating",
+      "shipment",
+      "arrest"
+    ]
+  },
+  "movement.transportperson.bringcarryunload": {
+    "event_id": "evt113",
+    "roles": [
+      "transporter",
+      "passenger",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 113,
+    "keywords": [
+      "transported",
+      "unloading",
+      "unload",
+      "transporting",
+      "transport"
+    ]
+  },
+  "movement.transportperson.disperseseparate": {
+    "event_id": "evt114",
+    "roles": [
+      "transporter",
+      "passenger",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 114,
+    "keywords": [
+      "shipments",
+      "transported",
+      "shipment",
+      "freight",
+      "transport"
+    ]
+  },
+  "movement.transportperson.evacuationrescue": {
+    "event_id": "evt115",
+    "roles": [
+      "transporter",
+      "passenger",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 115,
+    "keywords": [
+      "escape",
+      "fled",
+      "flee",
+      "evacuated",
+      "FLEE",
+      "fleeing",
+      "evacuate",
+      "escaped",
+      "evacuating",
+      "escaping",
+      "evacuates"
+    ]
+  },
+  "movement.transportperson.fall": {
+    "event_id": "evt116",
+    "roles": [
+      "passenger",
+      "origin",
+      "destination"
+    ],
+    "i-label": 116,
+    "keywords": [
+      "stumbling",
+      "stumbled",
+      "plummeting",
+      "stumble",
+      "stumbles",
+      "plummets"
+    ]
+  },
+  "movement.transportperson.grantentryasylum": {
+    "event_id": "evt117",
+    "roles": [
+      "granter",
+      "transporter",
+      "passenger",
+      "origin",
+      "destination"
+    ],
+    "i-label": 117,
+    "keywords": [
+      "immigrating",
+      "asylum",
+      "immigrated",
+      "immigrate",
+      "migrate"
+    ]
+  },
+  "movement.transportperson.hide": {
+    "event_id": "evt118",
+    "roles": [
+      "transporter",
+      "passenger",
+      "hidingplace",
+      "vehicle",
+      "origin"
+    ],
+    "i-label": 118,
+    "keywords": [
+      "conceal",
+      "concealed",
+      "smuggling",
+      "smuggle",
+      "smuggled",
+      "concealing",
+      "conceals"
+    ]
+  },
+  "movement.transportperson.prevententry": {
+    "event_id": "evt119",
+    "roles": [
+      "preventer",
+      "transporter",
+      "passenger",
+      "origin",
+      "destination"
+    ],
+    "i-label": 119,
+    "keywords": [
+      "denied",
+      "obstruct",
+      "roadblocks",
+      "obstructing",
+      "obstruction",
+      "obstructed",
+      "roadblock"
+    ]
+  },
+  "movement.transportperson.preventexit": {
+    "event_id": "evt120",
+    "roles": [
+      "preventer",
+      "transporter",
+      "passenger",
+      "origin",
+      "destination"
+    ],
+    "i-label": 120,
+    "keywords": [
+      "imprisoned",
+      "arrests",
+      "arrested",
+      "detained",
+      "incarcerated",
+      "captured",
+      "jailed",
+      "jail",
+      "capturing",
+      "imprison",
+      "incarcerate",
+      "arrest",
+      "capture",
+      "detain",
+      "imprisoning",
+      "incarcerating"
+    ]
+  },
+  "movement.transportperson.selfmotion": {
+    "event_id": "evt121",
+    "roles": [
+      "transporter",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 121,
+    "keywords": [
+      "walked",
+      "walking",
+      "roaming",
+      "walk",
+      "roamed",
+      "roam",
+      "march",
+      "walks"
+    ]
+  },
+  "movement.transportperson.smuggleextract": {
+    "event_id": "evt122",
+    "roles": [
+      "transporter",
+      "passenger",
+      "vehicle",
+      "origin",
+      "destination"
+    ],
+    "i-label": 122,
+    "keywords": [
+      "trafficking",
+      "smuggle",
+      "smuggled",
+      "smuggling"
+    ]
+  },
+  "personnel.elect.n/a": {
+    "event_id": "evt123",
+    "roles": [
+      "voter",
+      "candidate",
+      "place"
+    ],
+    "i-label": 123,
+    "keywords": [
+      "win",
+      "elected",
+      "won",
+      "Elected",
+      "winning"
+    ]
+  },
+  "personnel.elect.winelection": {
+    "event_id": "evt124",
+    "roles": [
+      "voter",
+      "candidate",
+      "place"
+    ],
+    "i-label": 124,
+    "keywords": [
+      "winning",
+      "won",
+      "elected",
+      "win",
+      "wins"
+    ]
+  },
+  "personnel.endposition.n/a": {
+    "event_id": "evt125",
+    "roles": [
+      "employee",
+      "placeofemployment",
+      "place"
+    ],
+    "i-label": 125,
+    "keywords": [
+      "retired",
+      "resigned",
+      "ousting",
+      "quit",
+      "dismissed",
+      "discharges",
+      "resign",
+      "ousted",
+      "sack",
+      "sacked",
+      "discharged",
+      "layoffs",
+      "resigning",
+      "Firing",
+      "layoff",
+      "sacking",
+      "oust",
+      "Resign",
+      "firing",
+      "discharge",
+      "retiring",
+      "quitting"
+    ]
+  },
+  "personnel.endposition.firinglayoff": {
+    "event_id": "evt126",
+    "roles": [
+      "employee",
+      "placeofemployment",
+      "place"
+    ],
+    "i-label": 126,
+    "keywords": [
+      "ousted",
+      "firing",
+      "discharged",
+      "oust",
+      "sacks",
+      "dismissed",
+      "ousting",
+      "sacked",
+      "discharges",
+      "discharge",
+      "sack",
+      "layoffs",
+      "layoff",
+      "Firing",
+      "sacking"
+    ]
+  },
+  "personnel.endposition.quitretire": {
+    "event_id": "evt127",
+    "roles": [
+      "employee",
+      "placeofemployment",
+      "place"
+    ],
+    "i-label": 127,
+    "keywords": [
+      "quit",
+      "retired",
+      "resign",
+      "retiring",
+      "resigning",
+      "resigned",
+      "quitting"
+    ]
+  },
+  "personnel.startposition.n/a": {
+    "event_id": "evt128",
+    "roles": [
+      "employee",
+      "placeofemployment",
+      "place"
+    ],
+    "i-label": 128,
+    "keywords": [
+      "hired",
+      "appointing",
+      "employing",
+      "appointed",
+      "recruit",
+      "employ",
+      "recruiting",
+      "appoint",
+      "appoints",
+      "recruited",
+      "hiring",
+      "employed",
+      "recruits"
+    ]
+  },
+  "personnel.startposition.hiring": {
+    "event_id": "evt129",
+    "roles": [
+      "employee",
+      "placeofemployment",
+      "place"
+    ],
+    "i-label": 129,
+    "keywords": [
+      "hired",
+      "employed",
+      "appoints",
+      "appointed",
+      "appointing",
+      "employs",
+      "appoint",
+      "recruited",
+      "hire",
+      "recruit",
+      "recruiting",
+      "hiring",
+      "hires",
+      "recruits",
+      "employ"
+    ]
+  },
+  "transaction.transaction.n/a": {
+    "event_id": "evt130",
+    "roles": [
+      "participant",
+      "participant",
+      "beneficiary",
+      "place"
+    ],
+    "i-label": 130,
+    "keywords": [
+      "land",
+      "funding",
+      "injunctions",
+      "donated",
+      "provide",
+      "fund",
+      "granted",
+      "seized",
+      "donate",
+      "provides",
+      "donating",
+      "confiscated",
+      "transferring",
+      "funded",
+      "grant",
+      "confiscate",
+      "providing",
+      "seize",
+      "seizing"
+    ]
+  },
+  "transaction.transaction.embargosanction": {
+    "event_id": "evt131",
+    "roles": [
+      "preventer",
+      "giver",
+      "recipient",
+      "artifactmoney",
+      "place"
+    ],
+    "i-label": 131,
+    "keywords": [
+      "boycott",
+      "sanctions",
+      "embargo",
+      "boycotted",
+      "Boycott",
+      "boycotting",
+      "injunction",
+      "boycotts",
+      "injunctions",
+      "sanction",
+      "embargoed",
+      "embargoes"
+    ]
+  },
+  "transaction.transaction.giftgrantprovideaid": {
+    "event_id": "evt132",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "place"
+    ],
+    "i-label": 132,
+    "keywords": [
+      "Donate",
+      "donate",
+      "funding",
+      "providing",
+      "donating",
+      "donated",
+      "provide",
+      "grant",
+      "fund",
+      "grants",
+      "funded",
+      "funds",
+      "provides",
+      "granted",
+      "granting"
+    ]
+  },
+  "transaction.transfermoney.n/a": {
+    "event_id": "evt133",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "money",
+      "place"
+    ],
+    "i-label": 133,
+    "keywords": [
+      "reimbursed",
+      "rented",
+      "donated",
+      "provide",
+      "buy",
+      "purchase",
+      "purchased",
+      "payments",
+      "compensate",
+      "paid",
+      "auction",
+      "income",
+      "loans",
+      "bought",
+      "purchases",
+      "embargo",
+      "grants",
+      "acquiring",
+      "lent",
+      "acquired",
+      "rent",
+      "providing",
+      "auctioned",
+      "funding",
+      "funds",
+      "buying",
+      "lending",
+      "loan",
+      "reimbursing",
+      "payment",
+      "pay",
+      "sanctions",
+      "compensated",
+      "lend",
+      "Rent",
+      "donate",
+      "stipends",
+      "Boycott",
+      "obtained",
+      "acquire",
+      "rents",
+      "overpaid",
+      "reimburse",
+      "donating",
+      "boycott",
+      "borrow",
+      "auctioning",
+      "compensating",
+      "borrowing",
+      "buys",
+      "purchasing",
+      "provided"
+    ]
+  },
+  "transaction.transfermoney.borrowlend": {
+    "event_id": "evt134",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "money",
+      "place"
+    ],
+    "i-label": 134,
+    "keywords": [
+      "lend",
+      "loan",
+      "rent",
+      "loans",
+      "borrowed",
+      "lending",
+      "rents",
+      "borrowing",
+      "rented",
+      "loaning",
+      "borrow",
+      "lent",
+      "lends",
+      "renting"
+    ]
+  },
+  "transaction.transfermoney.embargosanction": {
+    "event_id": "evt135",
+    "roles": [
+      "preventer",
+      "giver",
+      "recipient",
+      "money",
+      "place"
+    ],
+    "i-label": 135,
+    "keywords": [
+      "sanctions",
+      "boycott",
+      "Boycott",
+      "boycotted",
+      "embargo",
+      "Embargo",
+      "boycotts",
+      "boycotting",
+      "injunction",
+      "embargoes",
+      "sanctioned",
+      "sanction"
+    ]
+  },
+  "transaction.transfermoney.giftgrantprovideaid": {
+    "event_id": "evt136",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "money",
+      "place"
+    ],
+    "i-label": 136,
+    "keywords": [
+      "provide",
+      "donated",
+      "funds",
+      "donate",
+      "provides",
+      "funded",
+      "funding",
+      "providing",
+      "grants",
+      "grant",
+      "granted",
+      "granting",
+      "fund",
+      "provided"
+    ]
+  },
+  "transaction.transfermoney.payforservice": {
+    "event_id": "evt137",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "money",
+      "place"
+    ],
+    "i-label": 137,
+    "keywords": [
+      "reimbursed",
+      "compensating",
+      "payment",
+      "pay",
+      "payments",
+      "compensate",
+      "income",
+      "compensated",
+      "wage",
+      "overpaid",
+      "wages",
+      "paid",
+      "pays",
+      "reimbursing",
+      "reimburse",
+      "incomes",
+      "stipends"
+    ]
+  },
+  "transaction.transfermoney.purchase": {
+    "event_id": "evt138",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "money",
+      "place"
+    ],
+    "i-label": 138,
+    "keywords": [
+      "auction",
+      "bought",
+      "buy",
+      "purchasing",
+      "acquiring",
+      "acquired",
+      "obtain",
+      "purchase",
+      "obtained",
+      "acquire",
+      "buying",
+      "obtaining",
+      "auctioned",
+      "purchases",
+      "purchased",
+      "Auction",
+      "auctioning"
+    ]
+  },
+  "transaction.transferownership.n/a": {
+    "event_id": "evt139",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "artifact",
+      "place"
+    ],
+    "i-label": 139,
+    "keywords": [
+      "donated",
+      "loans",
+      "provide",
+      "lent",
+      "auction",
+      "purchased",
+      "borrowed",
+      "purchases",
+      "rent",
+      "rents",
+      "acquired",
+      "purchase",
+      "acquire",
+      "rented",
+      "lend",
+      "auctioned",
+      "providing",
+      "purchasing",
+      "funded",
+      "obtain",
+      "donating",
+      "embargo",
+      "obtained",
+      "grants",
+      "loan",
+      "buy",
+      "bought",
+      "provides",
+      "donate",
+      "obtaining",
+      "funding",
+      "loaned",
+      "borrow",
+      "renting",
+      "sanctions",
+      "fund"
+    ]
+  },
+  "transaction.transferownership.borrowlend": {
+    "event_id": "evt140",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "artifact",
+      "place"
+    ],
+    "i-label": 140,
+    "keywords": [
+      "borrow",
+      "loan",
+      "lending",
+      "loans",
+      "borrowed",
+      "rent",
+      "rented",
+      "lent",
+      "borrowing",
+      "loaned",
+      "lend",
+      "rents",
+      "loaning"
+    ]
+  },
+  "transaction.transferownership.embargosanction": {
+    "event_id": "evt141",
+    "roles": [
+      "preventer",
+      "giver",
+      "recipient",
+      "artifact",
+      "place"
+    ],
+    "i-label": 141,
+    "keywords": [
+      "injunction",
+      "embargo",
+      "sanctions",
+      "boycott",
+      "embargoed",
+      "injunctions",
+      "boycotted",
+      "boycotts"
+    ]
+  },
+  "transaction.transferownership.giftgrantprovideaid": {
+    "event_id": "evt142",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "artifact",
+      "place"
+    ],
+    "i-label": 142,
+    "keywords": [
+      "funded",
+      "Grant",
+      "fund",
+      "donated",
+      "providing",
+      "provided",
+      "grant",
+      "donating",
+      "granted",
+      "provide",
+      "funds",
+      "funding",
+      "provides",
+      "grants",
+      "donate"
+    ]
+  },
+  "transaction.transferownership.purchase": {
+    "event_id": "evt143",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "artifact",
+      "place"
+    ],
+    "i-label": 143,
+    "keywords": [
+      "acquire",
+      "purchased",
+      "acquired",
+      "purchasing",
+      "auctioned",
+      "obtained",
+      "buy",
+      "auctioning",
+      "buying",
+      "auction",
+      "acquiring",
+      "purchases",
+      "purchase",
+      "Purchase",
+      "bought",
+      "obtaining",
+      "buys"
+    ]
+  },
+  "transaction.transaction.transfercontrol": {
+    "event_id": "evt144",
+    "roles": [
+      "giver",
+      "recipient",
+      "beneficiary",
+      "territoryorfacility",
+      "place"
+    ],
+    "i-label": 144,
+    "keywords": [
+      "seized",
+      "land",
+      "confiscated",
+      "Land",
+      "transferring",
+      "confiscate",
+      "seizing",
+      "transfer",
+      "seize"
+    ]
+  }
+}
