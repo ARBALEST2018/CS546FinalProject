@@ -10,6 +10,9 @@ class eventContainer:
         for jsonline in f:
             event = json.loads(jsonline)
             toAppend = {}
+            toAppend["doc_key"] = event["doc_key"]
+            
+            toAppend["event_type"] = event["evt_triggers"][0][2][0][0]
             if (event["gold_evt_links"] == []):
                 continue
             event_id = int(event["gold_evt_links"][0][2][3:6])
@@ -54,4 +57,9 @@ class eventContainer:
                 if match:
                     toReturn.append(self.eventsAll[i])
         return toReturn
-        return [self.eventsAll[i] for i in self.eventsByType[index-1]]    
+        return [self.eventsAll[i] for i in self.eventsByType[index-1]]
+    def getEventByDocKey(self, doc_key):
+        for event in self.eventsAll:
+            if (event["doc_key"] == doc_key):
+                return event
+        return None    

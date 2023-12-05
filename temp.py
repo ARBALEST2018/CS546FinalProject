@@ -9,9 +9,11 @@ import json
 import string
 from collections.abc import Iterable
 from event_format import event_format
+from event_template import event_template
 from load_events import eventContainer
+from predictions import predictionContainer
 
-openai.api_key = configs.OPENAI_CHAT_API_KEY
+openai.api_key = configs.OPENAI_API_KEY
 
 
 # def extract_event(sentence):
@@ -106,108 +108,264 @@ openai.api_key = configs.OPENAI_CHAT_API_KEY
 #                     temp += word+" "
 #                 w.write(temp[:-1]+"\n")
 #             w.write("\n")
+# messages=[
+#     {"role": "system", "content": "You are a helpful assistant."},
+#     {"role": "user", "content": "Who won the world series in 2020?"},
+#     {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+#     {"role": "user", "content": "Where was it played?"}
+#   ]
 
-
-def makePrompt(trainEventContainer, testEvent, max_num, with_location = True):
-    toReturn = ""
-    if with_location:
-        toReturn += configs.PROMPT_0+"\n"+"\n"
-    else:
-        toReturn += configs.PROMPT_0_NL+"\n"+"\n"
-    trainEvents = trainEventContainer.getEventsById(testEvent["i-label"], [role[0] for role in testEvent["roles"]])
-    if (len(trainEvents)) == 0:
-        return ""
-    i = 0
-    while i < len(trainEvents) and i < max_num:
-        trainEvent = trainEvents[i]
+# def makePrompt(eventTemplate, trainEventContainer, testEvent, max_num, with_location = True):
+#     branch = True
+#     # toReturn = ""
+#     message = []
+#     toReturn = []
+#     if (branch):
+#         template = eventTemplate.getEventTemplateByIndex(testEvent["i-label"])
+#         if (template == None):
+#             return None
         
-        text = ""
-        for word in trainEvent["text"]:
-            text += word+" "
-        text = configs.PROMPT_TEXT+str(i+1)+" : "+text[:-1]+"\n"
+#         s = {"role":"system"}
+#         s["content"] = configs.INSTRUCTION
+#         toReturn.append(s)
         
-        # ats = ""
-        # acs = ""
-        # als = ""
+#         text = ""
+#         for word in testEvent["text"]:
+#             text += word+" "
+#         text = configs.DOCUMENT_HEAD+"\n"+text[:-1]+"\n"
+#         text += "\n"
         
-        for role in trainEvent["roles"]:
-            toAdd = role[0]+" : "+role[1]
-            if with_location:
-                # als += str(role[2])+" , "
-                toAdd += " ("+str(role[2])+")"
-            text += toAdd+"\n"
-            # ats += str(role[0])+" , "
-            # acs += str(role[1])+" , "
+#         text += configs.TEMPLATE_HEAD+"\n"
+#         text += template["template"]+"\n"
+#         text += "\n"
+        
+#         text += configs.TASK_HEAD+"\n"
+#         text += configs.TASK+"\n"
+#         for role in template["roles"]:
+#             text += role+"\n"
             
-        # text += configs.PROMPT_EVENT_ARGUMENT_TYPE+str(i+1)+" : "+ats[:-3]+"\n"
-        # text += configs.PROMPT_EVENT_ARGUMENT_CONTENT+str(i+1)+" : "+acs[:-3]+"\n"
-        # if with_location:
-        #     text += configs.PROMPT_EVENT_ARGUMENT_LOCATION+str(i+1)+" : "+als[:-3]+"\n"
-        text += "##\n"
-        toReturn += text
-        i += 1
-    if with_location:
-        toReturn += "\n"+configs.PROMPT_1+"\n"+"\n"
-    else:
-        toReturn += "\n"+configs.PROMPT_1_NL+"\n"+"\n"
+#         u = {"role":"user"}
+#         u["content"] = text
+#         toReturn.append(u)
+        
+        
+        
+#         # toReturn += configs.INSTRUCTION_HEAD+"\n"
+#         # toReturn += configs.INSTRUCTION+"\n"
+#         # toReturn += "\n"
+        
+#         # toReturn += configs.DOCUMENT_HEAD+"\n"
+#         # text = ""
+#         # for word in testEvent["text"]:
+#         #     text += word+" "
+#         # toReturn += text[:-1]+"\n"
+#         # toReturn += "\n"
+        
+#         # toReturn += configs.TEMPLATE_HEAD+"\n"
+#         # toReturn += template["template"]+"\n"
+#         # toReturn += "\n"
+        
+#         # toReturn += configs.TASK_HEAD+"\n"
+#         # toReturn += configs.TASK+"\n"
+#         # for role in template["roles"]:
+#         #     toReturn += role+"\n"
+        
+#     # else:
+#     #     if with_location:
+#     #         toReturn += configs.PROMPT_0+"\n"+"\n"
+#     #     else:
+#     #         toReturn += configs.PROMPT_0_NL+"\n"+"\n"
+#     #     trainEvents = trainEventContainer.getEventsById(testEvent["i-label"], [role[0] for role in testEvent["roles"]])
+#     #     if (len(trainEvents)) == 0:
+#     #         return ""
+#     #     i = 0
+#     #     while i < len(trainEvents) and i < max_num:
+#     #         trainEvent = trainEvents[i]
+            
+#     #         text = ""
+#     #         for word in trainEvent["text"]:
+#     #             text += word+" "
+#     #         text = configs.PROMPT_TEXT+str(i+1)+" : "+text[:-1]+"\n"
+            
+#     #         for role in trainEvent["roles"]:
+#     #             toAdd = role[0]+" : "+role[1]
+#     #             if with_location:
+#     #                 toAdd += " ("+str(role[2])+")"
+#     #             text += toAdd+"\n"
+#     #         text += "##\n"
+#     #         toReturn += text
+#     #         i += 1
+#     #     if with_location:
+#     #         toReturn += "\n"+configs.PROMPT_1+"\n"+"\n"
+#     #     else:
+#     #         toReturn += "\n"+configs.PROMPT_1_NL+"\n"+"\n"
+#     #     text = ""
+#     #     for word in testEvent["text"]:
+#     #         text += word+" "
+#     #     toReturn += configs.PROMPT_TEXT+str(i+1)+" : "+text[:-1]+"\n"
+#     #     for role in testEvent["roles"]:
+#     #         toReturn += role[0]+" : \n"
+#     #     if with_location:
+#     #         toReturn += configs.PROMPT_EVENT_ARGUMENT_LOCATION+str(i+1)+" : "+"\n"
+    
+#     return toReturn
+
+
+# # Instruction
+# The following examples is how you should perform a multi-sentence information extraction tasks.
+# Your tasks is to fill the arguments with entities you extract from the user input documents.
+# You can use <UNK> to indicate the unknown entity.
+# Answer the arguments in a consistent style as the example.
+
+# # Example
+# ## Document
+# Transportation officials are urging carpool and teleworking as options to combat an expected flood of drivers on the road.
+# ( Paul Duggan)
+# -- A Baltimore prosecutor accused a police detective of “ sabotaging ” investigations related to the death of Freddie Gray, accusing him of fabricating notes to suggest that the state ’s medical examiner believed the manner of death was an accident rather than a homicide.
+# The heated exchange came in the chaotic sixth day of the trial of Baltimore Officer Caesar Goodson Jr., who drove the police van in which Gray suffered a fatal spine injury in 2015.
+# ( Derek Hawkins and Lynh Bui)
+
+# ## Answer
+# <arg1> killer(person/organisation/country): Officer Caesar Goodson Jr.
+# <arg2> victim(person): Freddie Gray
+# <arg3> instrument(vehicles/explosives/sharps/blunts/firearms/chemicals): <UNK>
+# <arg4> place:Baltimore
+
+def makePrompt(eventTemplate, trainEventContainer, testEvent, max_num, with_instruction = True):
+    toReturn = []
+    
+    # template = eventTemplate.getEventTemplateByIndex(testEvent["i-label"])
+    # if (template == None):
+    #     return None
+    
+    if (with_instruction):
+        s = {"role":"system"}
+        
+        temps = configs.INSTRUCTION_HEAD+"\n"
+        temps += configs.INSTRUCTION_SAMPLE+"\n"
+        temps += "\n"
+        trainEvents = trainEventContainer.getEventsById(testEvent["i-label"], [role[0] for role in testEvent["roles"]])
+        i = 0
+        while i < len(trainEvents) and i < max_num:
+            temps += configs.EXAMPLE_HEAD+" "+str(i+1)+"\n"
+            trainEvent = trainEvents[i]
+            temps += configs.EXAMPLE_DOCUMENT_HEAD+"\n"
+            text = ""
+            for word in trainEvent["text"]:
+                text += word+" "
+            temps += text[:-1]+"\n"
+            temps += configs.EXAMPLE_ANSWER_HEAD+"\n"
+            for role in trainEvent["roles"]:
+                toAdd = role[0]+" : "+role[1]
+                temps += toAdd+"\n"
+            temps += "\n"
+            i += 1
+        s["content"] = temps
+        # print(temps)
+        toReturn.append(s)
+    
     text = ""
     for word in testEvent["text"]:
         text += word+" "
-    toReturn += configs.PROMPT_TEXT+str(i+1)+" : "+text[:-1]+"\n"
-    # ats = ""
+    text = configs.DOCUMENT_HEAD+"\n"+text[:-1]+"\n"
+    text += "\n"
+    
+    # text += configs.TEMPLATE_HEAD+"\n"
+    # text += template["template"]+"\n"
+    # text += "\n"
+    
+    text += configs.TASK_HEAD+"\n"
+    text += configs.TASK+"\n"
+    # for role in template["roles"]:
+    #     text += role+"\n"
     for role in testEvent["roles"]:
-        toReturn += role[0]+" : \n"
-    #     ats += str(role[0])+" , "
-    # toReturn += configs.PROMPT_EVENT_ARGUMENT_TYPE+str(i+1)+" : "+ats[:-3]+"\n"
-    # toReturn += configs.PROMPT_EVENT_ARGUMENT_CONTENT+str(i+1)+" : "+"\n"
-    if with_location:
-        toReturn += configs.PROMPT_EVENT_ARGUMENT_LOCATION+str(i+1)+" : "+"\n"
+        text += role[0]+" : \n"
+        
+    # print(text)
+    
+    u = {"role":"user"}
+    u["content"] = text
+    toReturn.append(u)
+    
     return toReturn
         
-class writer:
-    def write(a):
-        print(a,end="")
         
 eventFormats = event_format()
 trainEventContainer = eventContainer("rams//data/train.jsonlines",eventFormats=eventFormats)
+eventTemplates = event_template()
 # json.dump(trainEventContainer.eventsAll, open("train_events.json", mode='w'), indent=4)
-eventFormats.updateFile()
+# eventFormats.updateFile()
 testEventContainer = eventContainer("rams//data/test.jsonlines")
+predictions = predictionContainer("new_data/test-sample-gpt4.json")
 # json.dump(testEventContainer.eventsAll, open("test_events.json", mode='w'), indent=4)
-predictionToWrite = open("new_data/test-pred.txt",mode='w',encoding='utf-8')
-outputToWrite = open("new_data/output.txt",mode='w',encoding='utf-8')
+# predictionToWrite = open("new_data/test-pred.txt",mode='w',encoding='utf-8')
+# outputToWrite = open("new_data/output.txt",mode='w',encoding='utf-8')
+
 counter = 0
 for testEvent in testEventContainer.eventsAll:
-    prompt = makePrompt(trainEventContainer, testEvent, 8, False)
-    if (len(prompt) == 0):
+    current = predictions.getPredictionByDocKey(testEvent["doc_key"])
+    prompt = makePrompt(eventTemplates, trainEventContainer, testEvent, 8, True)
+    if prompt == None or len(prompt) == 0 or len(current) > 2:
         continue
+    print(json.dumps(prompt, indent=4))
     print()
-    outputToWrite.write("\n")
-    print(prompt)
-    outputToWrite.write(prompt)
-    print()
-    outputToWrite.write("\n")
-    text = ""
-    for word in testEvent["text"]:
-        if (word != "."):
-            text += word+" "
-        else:
-            text += word+"\n"
-    predictionToWrite.write(text+"\n")
-    response = openai.Completion.create(
-        model=configs.OPENAI_TEXT_MODEL,
-        prompt=prompt,
+    # text = ""
+    # for word in testEvent["text"]:
+    #     if (word != "."):
+    #         text += word+" "
+    #     else:
+    #         text += word+"\n"
+    
+    current+=prompt
+    response = openai.ChatCompletion.create(
+        model=configs.OPENAI_CHAT_MODEL,
+        response_format={ "type": "json_object" },
+        messages=prompt,
     )
-    predictionToWrite.write(response["choices"][0]["text"]+"\n\n")
-    print(response)
-    outputToWrite.write(response["choices"][0]["text"])
-    print()
-    outputToWrite.write("\n\n\n")
+    current.append(response["choices"][0]["message"])
+    predictions.updatePrediction(testEvent["doc_key"], current)
+    predictions.updateFile()
+    responseJSON = json.loads(response["choices"][0]["message"]["content"])
+    print(json.dumps(responseJSON, indent=4))
     counter += 1
     
     # if (counter >= 10):
     #     break
-predictionToWrite.close()
+    
+    
+    # prompt = makePrompt(eventTemplates, trainEventContainer, testEvent, 8, False)
+    # if prompt == None or len(prompt) == 0:
+    #     continue
+    # print()
+    # outputToWrite.write("\n")
+    # print(prompt)
+    # outputToWrite.write(prompt)
+    # print()
+    # outputToWrite.write("\n")
+    # text = ""
+    # for word in testEvent["text"]:
+    #     if (word != "."):
+    #         text += word+" "
+    #     else:
+    #         text += word+"\n"
+    # predictionToWrite.write(text+"\n")
+    # response = openai.Completion.create(
+    #     model=configs.OPENAI_CHAT_MODEL,
+    #     response_format={ "type": "json_object" },
+    #     prompt=prompt,
+    # )
+    # predictionToWrite.write(response["choices"][0]["text"]+"\n\n")
+    # print(response)
+    # outputToWrite.write(response["choices"][0]["text"])
+    # print()
+    # outputToWrite.write("\n\n\n")
+    # counter += 1
+    
+    # if (counter >= 10):
+    #     break
+# predictionToWrite.close()
+# outputToWrite.close()
+# predictions.updateFile()
 
 
 

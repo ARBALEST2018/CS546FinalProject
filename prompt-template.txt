@@ -1,0 +1,139 @@
+Life:Die
+# Instruction
+Given the document, extract the information based on the corresponding template with arguments. 
+Fill the arguments with entity you find in the document. 
+Only one entity from the given document is sufficient. Choose the most relevant based on the context of the document.
+If no such argument found, you can fill with <UNK> notation.
+
+# Document
+“ When it actually happens to you, it actually reinforces how dangerous this city is and how lucky we are to live in Australia. ”
+In 2015 British sailors Hannah Mills and Saskia Clark were robbed by two men with knives at Guanabara Bay — the venue for Olympic sailing events that has also been dogged by pollution problems.
+At one point last year, Rio was reported to be experiencing its highest level of street robberies in more than 20 years, while from January through to May this year, Rio de Janeiro logged more than 2000 homicides — a 13 per cent increase over the same period in 2015.
+Last week 10 Brazilians were arrested for allegedly planning attacks during the Olympics, while on Sunday 50,000 police officers and soldiers were deployed to protect sports venues, tourist spots and key transport areas.
+Increased crime is just one of many problems confronting Rio in the lead up to the Games.
+
+# Template
+<arg1> killed <arg2> with <arg3> instrument in <arg4> place.
+
+# Task
+Extract the arguments from the document:
+<arg1> killer(person/organisation/country):
+<arg2> victim(person): 
+<arg3> instrument(vehicles/explosives/sharps/blunts/firearms/chemicals):
+<arg4> place:
+
+
+#########################################################################
+Life:Injure(效果不是很好，先忽略)
+
+# Template
+<arg1> injured <arg2> with <arg3> instrument in <arg4> place
+
+# Task
+Extract the arguments from the document:
+<arg1> injurer:
+<arg2> victim: 
+<arg3> instrument:
+<arg4> place:
+########################################################################
+
+Movement:Transport_artifact （运送物品）
+
+# Template
+<arg1> transported <arg2> in <arg3> vehicle from <arg4> place to <arg5> place.
+
+# Task
+Extract the arguments from the document:
+<arg1> transporter(person/organisation/country):
+<arg2> artifact(shipment/cargo/object):
+<arg3> vehicle:
+<arg4> origin(country/city/town/place):
+<arg5> destination(country/city/town/place):
+
+########################################################################
+Movement:Transport_person
+
+# Template
+<arg1> transported <arg2> in <arg3> vehicle from <arg4> place to <arg5> place.
+
+# Task
+Extract the arguments from the document:
+<arg1> transporter(person/organisation/country):
+<arg2> passenger(person/community/population):
+<arg3> vehicle:
+<arg4> origin(country/city/town/place):
+<arg5> destination(country/city/town/place):
+
+########################################################################
+Personnel:Elect
+
+# Template
+<arg1> elected <arg2> in <arg3> place
+
+# Task
+Extract the arguments from the document:
+<arg1> voter:
+<arg2> candidate:
+<arg3> place:
+
+########################################################################
+Personnel:EndPosition
+
+# Template
+<arg1> stopped working at <arg2> organization in <arg3> place
+
+# Task
+Extract the arguments from the document:
+<arg1> employee(person/she/he):
+<arg2> place_of_employment(organisation/company/government):
+<arg3> place(country/city/town):
+
+########################################################################
+Personnel:StartPosition
+
+# Template
+<arg1> started working at <arg2> organization in <arg3> place
+
+# Task
+Extract the arguments from the document:
+<arg1> employee(person/she/he):
+<arg2> place_of_employment(organisation/company/government):
+<arg3> place(country/city/town):
+
+########################################################################
+Conflict:Attack
+
+# Template
+<arg1> attacked <arg2> hurting <arg5> victims using <arg3> instrument at <arg4> place
+
+# Task
+Extract the arguments from the document:
+<arg1> attacker(person/organisation/country):
+<arg2> target(person/object):
+<arg3> instrument(action/weapon/words):
+<arg4> place:
+
+########################################################################
+Conflict:Demonstrate
+
+# Template
+<arg1> demonstrated at <arg2> place
+
+# Task
+Extract the arguments from the document:
+<arg1> demonstrator(person/organisation):
+<arg4> place:
+
+########################################################################
+Disaster:AccidentCrash
+
+# Template
+<arg1> in <arg2> vehicle crashed <arg3> object at <arg4> place
+
+# Task
+Extract the arguments from the document:
+<arg1> driver_passenger(person/organisation):
+<arg2> vehicle:
+<arg3> crashed_object(another vehicle/object):
+<arg4> place:
+

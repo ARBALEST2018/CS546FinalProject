@@ -3,7 +3,7 @@ FILENAME = "format.json"
 class event_format:
     def __init__(self, filename = FILENAME):
         self.filename = filename
-        f = open(filename)
+        f = open(self.filename)
         self.eventdict = json.load(f)
         f.close()
         
@@ -29,4 +29,5 @@ class event_format:
     
     def updateFile(self):
         outfile = open(self.filename,mode='w')
-        json.dump(self.eventdict, outfile, indent=2)
+        json.dump(self.eventdict, outfile, indent=4)
+        outfile.close()
