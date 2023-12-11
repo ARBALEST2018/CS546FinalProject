@@ -296,76 +296,78 @@ eventTemplates = event_template()
 # json.dump(trainEventContainer.eventsAll, open("train_events.json", mode='w'), indent=4)
 # eventFormats.updateFile()
 testEventContainer = eventContainer("rams//data/test.jsonlines")
-predictions = predictionContainer("new_data/test-sample-gpt4.json")
+# predictions = predictionContainer("new_data/test-sample-gpt4.json")
 # json.dump(testEventContainer.eventsAll, open("test_events.json", mode='w'), indent=4)
 # predictionToWrite = open("new_data/test-pred.txt",mode='w',encoding='utf-8')
 # outputToWrite = open("new_data/output.txt",mode='w',encoding='utf-8')
 
 counter = 0
-for testEvent in testEventContainer.eventsAll:
-    current = predictions.getPredictionByDocKey(testEvent["doc_key"])
-    prompt = makePrompt(eventTemplates, trainEventContainer, testEvent, 8, True)
-    if prompt == None or len(prompt) == 0 or len(current) > 2:
-        continue
-    print(json.dumps(prompt, indent=4))
-    print()
-    # text = ""
-    # for word in testEvent["text"]:
-    #     if (word != "."):
-    #         text += word+" "
-    #     else:
-    #         text += word+"\n"
-    
-    current+=prompt
-    response = openai.ChatCompletion.create(
-        model=configs.OPENAI_CHAT_MODEL,
-        response_format={ "type": "json_object" },
-        messages=prompt,
-    )
-    current.append(response["choices"][0]["message"])
-    predictions.updatePrediction(testEvent["doc_key"], current)
-    predictions.updateFile()
-    responseJSON = json.loads(response["choices"][0]["message"]["content"])
-    print(json.dumps(responseJSON, indent=4))
-    counter += 1
-    
-    # if (counter >= 10):
-    #     break
-    
-    
-    # prompt = makePrompt(eventTemplates, trainEventContainer, testEvent, 8, False)
-    # if prompt == None or len(prompt) == 0:
-    #     continue
-    # print()
-    # outputToWrite.write("\n")
-    # print(prompt)
-    # outputToWrite.write(prompt)
-    # print()
-    # outputToWrite.write("\n")
-    # text = ""
-    # for word in testEvent["text"]:
-    #     if (word != "."):
-    #         text += word+" "
-    #     else:
-    #         text += word+"\n"
-    # predictionToWrite.write(text+"\n")
-    # response = openai.Completion.create(
-    #     model=configs.OPENAI_CHAT_MODEL,
-    #     response_format={ "type": "json_object" },
-    #     prompt=prompt,
-    # )
-    # predictionToWrite.write(response["choices"][0]["text"]+"\n\n")
-    # print(response)
-    # outputToWrite.write(response["choices"][0]["text"])
-    # print()
-    # outputToWrite.write("\n\n\n")
-    # counter += 1
-    
-    # if (counter >= 10):
-    #     break
-# predictionToWrite.close()
-# outputToWrite.close()
-# predictions.updateFile()
+for num in [1,5]:
+    predictions = predictionContainer("new_data/test-sample-"+str(num)+"-gpt4.json")  
+    for testEvent in testEventContainer.eventsAll:
+        current = predictions.getPredictionByDocKey(testEvent["doc_key"])
+        prompt = makePrompt(eventTemplates, trainEventContainer, testEvent, num, True)
+        if prompt == None or len(prompt) == 0 or len(current) > 2:
+            continue
+        print(json.dumps(prompt, indent=4))
+        print()
+        # text = ""
+        # for word in testEvent["text"]:
+        #     if (word != "."):
+        #         text += word+" "
+        #     else:
+        #         text += word+"\n"
+        
+        current+=prompt
+        response = openai.ChatCompletion.create(
+            model=configs.OPENAI_CHAT_MODEL,
+            response_format={ "type": "json_object" },
+            messages=prompt,
+        )
+        current.append(response["choices"][0]["message"])
+        predictions.updatePrediction(testEvent["doc_key"], current)
+        predictions.updateFile()
+        responseJSON = json.loads(response["choices"][0]["message"]["content"])
+        print(json.dumps(responseJSON, indent=4))
+        counter += 1
+        
+        # if (counter >= 10):
+        #     break
+        
+        
+        # prompt = makePrompt(eventTemplates, trainEventContainer, testEvent, 8, False)
+        # if prompt == None or len(prompt) == 0:
+        #     continue
+        # print()
+        # outputToWrite.write("\n")
+        # print(prompt)
+        # outputToWrite.write(prompt)
+        # print()
+        # outputToWrite.write("\n")
+        # text = ""
+        # for word in testEvent["text"]:
+        #     if (word != "."):
+        #         text += word+" "
+        #     else:
+        #         text += word+"\n"
+        # predictionToWrite.write(text+"\n")
+        # response = openai.Completion.create(
+        #     model=configs.OPENAI_CHAT_MODEL,
+        #     response_format={ "type": "json_object" },
+        #     prompt=prompt,
+        # )
+        # predictionToWrite.write(response["choices"][0]["text"]+"\n\n")
+        # print(response)
+        # outputToWrite.write(response["choices"][0]["text"])
+        # print()
+        # outputToWrite.write("\n\n\n")
+        # counter += 1
+        
+        # if (counter >= 10):
+        #     break
+    # predictionToWrite.close()
+    # outputToWrite.close()
+    # predictions.updateFile()
 
 
 
